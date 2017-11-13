@@ -1,4 +1,4 @@
-import _ for 'Lodash'
+import _ from 'Lodash';
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
@@ -29,7 +29,7 @@ this.videoSearch('machine learning');
 	}
 
 	render (){
-const videoSearch = ._debounce((term) => {this.videoSearch(term)}, 300);
+const videoSearch = _.debounce((term) => {this.videoSearch(term)}, 300);
 
 		return (
 			<div>
