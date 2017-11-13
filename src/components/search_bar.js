@@ -11,8 +11,7 @@ class SearchBar extends Component {
 		this.setState({ term: e.target.value });
 		this.props.onSearchTermChange({
 			term: e.target.value,
-		})
-
+		});
 	}
 
 	// Controlled component is mutated by state and state only rather than input components.
