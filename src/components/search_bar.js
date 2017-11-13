@@ -1,22 +1,32 @@
-import React,{Component} from 'react';
+// Even though we are not using React Elements here, when this component gets
+// transpiled into ES5, it will be converted to React.createElement thus, must import react.
+import React, { Component } from 'react';
+
 class SearchBar extends Component {
-constructor (props){
-super(props);
-this.state = {term: ''};
-}
-render (){
-return (
-<div className="search-bar">
-	<input
-	value={this.state.term} onChange = {event => this.onInputChange(event.target.value)}/>
-</div>);
+	state = {	
+		term: '',
+	};
+
+	onInputChange = (e) => {
+		this.setState({ term: e.target.value });
+		this.props.onInputChange({
+			term: e.target.value,
+		})
+
+	}
+
+	// Controlled component is mutated by state and state only rather than input components.
+	render() {
+		return(
+			<div className='search-bar'>
+				<input
+					placeholder='Enter title'
+					value={this.state.term}
+					onChange={this.onInputChange}
+				/>
+			</div>
+		);
+	}
 }
 
-onInputChange(term){
-	this.setState ({term});
-
-this.props.onSearchTermChange(term);
-
-}
-};
 export default SearchBar;
