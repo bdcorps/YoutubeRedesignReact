@@ -18,16 +18,19 @@ class App extends Component {
 			videos:[],
 			selectedVideo: null};
 
-		this.videoSearch('machine learning');
+		this.videoSearch('Machine Learning');
 	}
 
 	videoSearch(term){
-		YTSearch({key: API_KEY, term:term},  (videos)=>
-		{
-			this.setState ({videos:videos,
-				selectedVideo: videos[0]});
-			});
-		}
+		YTSearch({key: API_KEY, term:term}, (videos)=>
+			{
+				this.setState ({
+					videos : videos,
+					selectedVideo : videos[0],
+				});
+			}
+		);
+	}
 
 	render (){
 		const videoSearch = _.debounce((term) => {this.videoSearch(term)}, 300);
@@ -35,12 +38,13 @@ class App extends Component {
 			<div>
 			<SearchBar onSearchTermChange = {videoSearch}/>
 
-			<SideBar></SideBar>
-						
+			<SideBar>
+				
+			</SideBar>
 
-
-			<VideoDetail video
-			={this.state.selectedVideo}/>
+			<VideoDetail 
+				video={this.state.selectedVideo}
+			/>
 			</div>
 		);
 	}
@@ -48,3 +52,4 @@ class App extends Component {
 
 			
 ReactDOM.render (<App />, document.querySelector('.container'));
+
