@@ -26,3 +26,16 @@
 .list-group-item:hover{
 	background-color: #eee;
 }
+
+
+
+.side-bar h2{
+color:#FF0000;
+font-size:0.75rem;
+}
+
+.side-bar list-item h3{
+color:#666666;
+font-size:0.65rem;
+}
+
