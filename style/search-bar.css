@@ -1,0 +1,69 @@
+.search-bar {
+    border-bottom: 2px solid #F0F0F0;
+
+    width: 100vw;
+    padding-top: 1.5em;
+    padding-left: 0.5em;
+}
+
+.search-bar input {
+    background-color: #F5F5F5;
+    border: none;
+    max-width: 750px;
+    margin: auto;
+    height: 35px;
+    margin-left: 3.5em;
+    margin-bottom: 1.5em;
+}
+
+
+.search-bar input::placeholder {
+    font-size: 0.65em;
+    margin-left: 10px;
+}
+
+.search-bar input {
+    text-indent: 1em;
+    width: 300px;
+}
+
+.search-bar-container {
+    margin-left: 2em;
+}
+
+.youtube-icon {
+    width: 150px;
+}
+
+.profile {
+    float: right;
+    margin-right: 2em;
+}
+
+.profile .name {
+    display: inline-block;
+    font-size: 0.75em;
+    color: #808080;
+    margin-top: -10px;
+    vertical-align: middle;
+}
+
+.profile .icon {
+    display: inline-block;
+    font-size: 2em;
+    margin-left: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+    .search-bar input {
+        margin-top: 1em;
+        margin-left: 0;
+        margin-bottom: 1em;
+        margin-right: 0;
+    }
+
+    .profile {
+        margin-bottom: 1em;
+    }
+    
+}

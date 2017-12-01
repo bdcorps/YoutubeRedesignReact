@@ -1,0 +1,45 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.side-bar {
+    width: 20%;
+    background-color: #F5F5F5;
+    height: 100vh;
+    border-right:2px solid #F0F0F0;
+}
+
+.side-bar:after {}
+
+.heading {
+    color: #FF0000;
+    font-size: 0.65em;
+    font-weight: 700;
+}
+
+.side-bar-container {
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+    margin-top: 2em;
+    color: #808080;
+}
+
+.sub-heading-container {
+    margin-top: 0.40em;
+}
+
+.sub-text {
+    font-size: 0.65em;
+    margin-left: 1rem;
+    margin-top: 1.25em;
+    display: inline-block;
+}
+
+.sub-icon {
+    font-size: 0.75em;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+    .side-bar{display:none;}
+}
