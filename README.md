@@ -7,4 +7,4 @@ Followed the design template from UpLabs' Marcus Hofer [here](https://www.uplabs
 This project reimagines Youtube's web UI. The addition of React.JS means the content is updated as soon as the user enters in a search query.
 
 ![Screen1](screen1.png?raw=true "Screen1")
-![Screen2](screen2.png?raw=true "Screen2")
+<img src="screen2.png" width="50%" height="50%">
