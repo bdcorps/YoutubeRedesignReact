@@ -8,5 +8,3 @@ This project reimagines Youtube's web UI. The addition of React.JS means the con
 
 ![Screen1](screen1.png?raw=true "Screen1")
 ![Screen2](screen2.png?raw=true "Screen2")
-
-

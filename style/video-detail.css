@@ -1,0 +1,55 @@
+.video-frame {
+    margin-top: 2.5em;
+    margin-left: 2em;
+}
+
+.video-frame .details .video-title {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.video-frame .details .subscribe-bar {
+    margin-top: 0.5em;
+    margin-bottom: 1.25em;
+}
+
+.video-frame .details .subscribe-bar .name {
+    display: inline-block;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 0.75em;
+    color: #808080;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+.video-frame .details .subscribe-bar .icon {
+    display: inline-block;
+
+    font-size: 1.5em;
+}
+
+.video-frame .details .subscribe-bar .sub-button {
+    display: inline-block;
+}
+
+.video-frame .details .subscribe-bar .sub-count {
+    display: inline-block;
+}
+
+.video-frame .details .video-desc {
+    font-size: 0.75em;
+}
+
+.details {
+    margin-top: 2em;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .video-frame {
+        margin-left: 0em;
+    }
+
+    .sub-count{margin-top:1em;}
+}
